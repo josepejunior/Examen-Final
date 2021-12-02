@@ -19,10 +19,15 @@ namespace Presentaciòn.formularios
 
         private void NotaEstudiante_Load(object sender, EventArgs e)
         {
-
+            cmbAsignatura.Items.AddRange(Enum.GetValues(RichTextBoxSelectionTypes(Asignatura)).Cast<object>().ToArray());
         }
 
         private void btnMejores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
         {
 
         }

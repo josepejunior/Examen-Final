@@ -37,14 +37,14 @@ namespace Presentaciòn.formularios
             this.lblParcialI = new System.Windows.Forms.Label();
             this.lblSistematico = new System.Windows.Forms.Label();
             this.btnMejores = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtTareas = new System.Windows.Forms.TextBox();
+            this.txtNotaFinal = new System.Windows.Forms.TextBox();
+            this.txtParcaialII = new System.Windows.Forms.TextBox();
+            this.txtParcialI = new System.Windows.Forms.TextBox();
+            this.txtSistematico = new System.Windows.Forms.TextBox();
+            this.txtbEstudiante = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
+            this.cmbAsignatura = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblAsignatura
@@ -120,54 +120,48 @@ namespace Presentaciòn.formularios
             this.btnMejores.UseVisualStyleBackColor = true;
             this.btnMejores.Click += new System.EventHandler(this.btnMejores_Click);
             // 
-            // textBox1
+            // txtTareas
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 20);
-            this.textBox1.TabIndex = 8;
+            this.txtTareas.Location = new System.Drawing.Point(133, 248);
+            this.txtTareas.Name = "txtTareas";
+            this.txtTareas.Size = new System.Drawing.Size(197, 20);
+            this.txtTareas.TabIndex = 9;
             // 
-            // textBox2
+            // txtNotaFinal
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 248);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(197, 20);
-            this.textBox2.TabIndex = 9;
+            this.txtNotaFinal.Location = new System.Drawing.Point(133, 297);
+            this.txtNotaFinal.Name = "txtNotaFinal";
+            this.txtNotaFinal.Size = new System.Drawing.Size(197, 20);
+            this.txtNotaFinal.TabIndex = 10;
             // 
-            // textBox3
+            // txtParcaialII
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 297);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(197, 20);
-            this.textBox3.TabIndex = 10;
+            this.txtParcaialII.Location = new System.Drawing.Point(133, 207);
+            this.txtParcaialII.Name = "txtParcaialII";
+            this.txtParcaialII.Size = new System.Drawing.Size(197, 20);
+            this.txtParcaialII.TabIndex = 11;
             // 
-            // textBox4
+            // txtParcialI
             // 
-            this.textBox4.Location = new System.Drawing.Point(133, 207);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(197, 20);
-            this.textBox4.TabIndex = 11;
+            this.txtParcialI.Location = new System.Drawing.Point(133, 162);
+            this.txtParcialI.Name = "txtParcialI";
+            this.txtParcialI.Size = new System.Drawing.Size(197, 20);
+            this.txtParcialI.TabIndex = 12;
             // 
-            // textBox5
+            // txtSistematico
             // 
-            this.textBox5.Location = new System.Drawing.Point(133, 162);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(197, 20);
-            this.textBox5.TabIndex = 12;
+            this.txtSistematico.Location = new System.Drawing.Point(133, 113);
+            this.txtSistematico.Name = "txtSistematico";
+            this.txtSistematico.Size = new System.Drawing.Size(197, 20);
+            this.txtSistematico.TabIndex = 13;
             // 
-            // textBox6
+            // txtbEstudiante
             // 
-            this.textBox6.Location = new System.Drawing.Point(133, 113);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(197, 20);
-            this.textBox6.TabIndex = 13;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(133, 70);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(197, 20);
-            this.textBox7.TabIndex = 14;
+            this.txtbEstudiante.Location = new System.Drawing.Point(133, 70);
+            this.txtbEstudiante.Name = "txtbEstudiante";
+            this.txtbEstudiante.Size = new System.Drawing.Size(197, 20);
+            this.txtbEstudiante.TabIndex = 14;
+            this.txtbEstudiante.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // btnOK
             // 
@@ -178,19 +172,27 @@ namespace Presentaciòn.formularios
             this.btnOK.Text = "Guardar nota";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
+            // cmbAsignatura
+            // 
+            this.cmbAsignatura.FormattingEnabled = true;
+            this.cmbAsignatura.Location = new System.Drawing.Point(133, 27);
+            this.cmbAsignatura.Name = "cmbAsignatura";
+            this.cmbAsignatura.Size = new System.Drawing.Size(197, 21);
+            this.cmbAsignatura.TabIndex = 16;
+            // 
             // NotaEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 470);
+            this.Controls.Add(this.cmbAsignatura);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbEstudiante);
+            this.Controls.Add(this.txtSistematico);
+            this.Controls.Add(this.txtParcialI);
+            this.Controls.Add(this.txtParcaialII);
+            this.Controls.Add(this.txtNotaFinal);
+            this.Controls.Add(this.txtTareas);
             this.Controls.Add(this.lblSistematico);
             this.Controls.Add(this.lblParcialI);
             this.Controls.Add(this.lblParcialII);
@@ -217,13 +219,13 @@ namespace Presentaciòn.formularios
         private System.Windows.Forms.Label lblParcialI;
         private System.Windows.Forms.Label lblSistematico;
         private System.Windows.Forms.Button btnMejores;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtTareas;
+        private System.Windows.Forms.TextBox txtNotaFinal;
+        private System.Windows.Forms.TextBox txtParcaialII;
+        private System.Windows.Forms.TextBox txtParcialI;
+        private System.Windows.Forms.TextBox txtSistematico;
+        private System.Windows.Forms.TextBox txtbEstudiante;
         private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.ComboBox cmbAsignatura;
     }
 }
